@@ -1,7 +1,7 @@
-name: "My site"
+name: "Pagina de prueba"
 output_dir: "."
 navbar:
-  title: "My site"
+  title: "Pagina de prueba"
   left:
     - text: "inicio"
       href: index.html
