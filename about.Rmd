@@ -3,5 +3,17 @@ title: "About This Website"
 ---
 
 
-Programa de Reciclaje de Drones: Implementar un programa de reciclaje de drones de juguete para que los clientes puedan devolver sus drones viejos o rotos. La empresa puede desmontarlos y reciclar los componentes para reducir residuos electrónicos y promover el ciclo de vida sostenible de los productos.
-Diseño Modular: Desarrollar drones de juguete con un diseño modular que permita a los usuarios reparar fácilmente las piezas rotas o actualizar componentes obsoletos. ##Esto fomentaría una cultura de reparación y reutilización, reduciendo así la necesidad de desechar drones completos.
+body{
+  font-family: Barlow;
+  font-size: 12pt;
+}
+/* Headers */
+h3,h4,h5,h6{
+  font-family: Barlow;
+  font-size: 13pt;
+}
+/* Headers 2 */
+h1,h2{
+  font-family: Barlow;
+  font-size: 22pt;
+}

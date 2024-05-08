@@ -5,9 +5,13 @@ navbar:
   left:
     - text: "inicio"
       href: index.html
+      icon: fa-gear
     - text: "sobre la pagina"
       href: about.html
 output:
   html_document:
     theme: yeti 
     highlight: textmate
+
+      
+  
