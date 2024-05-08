@@ -1,5 +1,7 @@
 ---
 title: "My site"
+author: Miguel Rojas
+Date: Mayo 5, 2024
 ---
 
 Esta sera mi primera pagina para confirguracion de y aprendizaje de la creación

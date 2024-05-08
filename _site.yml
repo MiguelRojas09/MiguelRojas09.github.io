@@ -3,10 +3,12 @@ output_dir: "."
 navbar:
   title: "My site"
   left:
-    - text: "Home"
+    - text: "inicio"
       href: index.html
-    - text: "About"
+    - text: "sobre la pagina"
       href: about.html
+    - text: "pagina"
+      href: pagina.html
 output:
   html_document:
     theme: yeti 
