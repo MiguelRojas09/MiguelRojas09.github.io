@@ -1,0 +1,17 @@
+---
+title: "My site"
+author: Miguel Rojas
+Date: "Mayo 5, 2024"
+---
+
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+---
+##Pagina de segunda tabla
+
+```r{r cars} 
+
+```

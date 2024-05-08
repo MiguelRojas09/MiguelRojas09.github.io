@@ -1,7 +1,7 @@
 ---
 title: "My site"
 author: Miguel Rojas
-Date: Mayo 5, 2024
+Date: "Mayo 5, 2024"
 ---
 
 Esta sera mi primera pagina para confirguracion de y aprendizaje de la creación
@@ -13,7 +13,7 @@ table:content "rubros"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+## Creacion de un summary cars desde una base de datos 
 
 Creacion de tablas y graficas para esta pagina con Rmarkdown 
 Primer intento con sumarry cars
@@ -31,3 +31,5 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
