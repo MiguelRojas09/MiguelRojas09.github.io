@@ -2,7 +2,6 @@
 title: "About This Website"
 ---
 
-Ya creo que por fin termine 
 
 Programa de Reciclaje de Drones: Implementar un programa de reciclaje de drones de juguete para que los clientes puedan devolver sus drones viejos o rotos. La empresa puede desmontarlos y reciclar los componentes para reducir residuos electrónicos y promover el ciclo de vida sostenible de los productos.
 Diseño Modular: Desarrollar drones de juguete con un diseño modular que permita a los usuarios reparar fácilmente las piezas rotas o actualizar componentes obsoletos. ##Esto fomentaría una cultura de reparación y reutilización, reduciendo así la necesidad de desechar drones completos.
