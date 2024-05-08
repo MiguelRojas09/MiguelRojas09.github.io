@@ -1,5 +1,5 @@
 ---
-title: "My site"
+title: "Tabla 2"
 author: Miguel Rojas
 Date: "Mayo 5, 2024"
 ---
