@@ -8,7 +8,9 @@ navbar:
     - text: "sobre la pagina"
       href: about.html
     - text: "pagina"
-      href: pagina..html
+      href: pagina.html
+    - text: "pagina2"
+      href: pagina2.html
 output:
   html_document:
     theme: yeti 
