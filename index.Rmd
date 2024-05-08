@@ -1,5 +1,9 @@
 ---
-title: "Miguel Rojas"
+title: "My site"
 ---
 
 Esta sera mi primera pagina para confirguracion de y aprendizaje de la creación
+
+---
+table:content "rubros"
+---
