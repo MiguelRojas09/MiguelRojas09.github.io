@@ -1,5 +1,5 @@
 ---
-title: "My Website"
+title: "Miguel Rojas"
 ---
 
 Esta sera mi primera pagina para confirguracion de y aprendizaje de la creación
