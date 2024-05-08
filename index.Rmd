@@ -2,9 +2,4 @@
 title: "My Website"
 ---
 
-Hello, Website
-
-##HOLA AMOR TE AMO
-
-
-Mafe eres hermosa 
+Esta sera mi primera pagina para confirguracion de y aprendizaje de la creación
