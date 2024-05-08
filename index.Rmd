@@ -9,3 +9,25 @@ Esta sera mi primera pagina para confirguracion de y aprendizaje de la creación
 ---
 table:content "rubros"
 ---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+Creacion de tablas y graficas para esta pagina con Rmarkdown 
+Primer intento con sumarry cars
+
+```{r cars}
+summary(cars)
+```
+
+## graficas
+
+grafica mediana plot:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
