@@ -275,49 +275,17 @@ $(document).ready(function () {
 </div>
 
 
-<pre class="r"><code>table(pressure)</code></pre>
-<pre><code>##            pressure
-## temperature 2e-04 0.0012 0.006 0.03 0.09 0.27 0.75 1.85 4.2 8.8 17.3 32.1 57 96 157
-##         0       1      0     0    0    0    0    0    0   0   0    0    0  0  0   0
-##         20      0      1     0    0    0    0    0    0   0   0    0    0  0  0   0
-##         40      0      0     1    0    0    0    0    0   0   0    0    0  0  0   0
-##         60      0      0     0    1    0    0    0    0   0   0    0    0  0  0   0
-##         80      0      0     0    0    1    0    0    0   0   0    0    0  0  0   0
-##         100     0      0     0    0    0    1    0    0   0   0    0    0  0  0   0
-##         120     0      0     0    0    0    0    1    0   0   0    0    0  0  0   0
-##         140     0      0     0    0    0    0    0    1   0   0    0    0  0  0   0
-##         160     0      0     0    0    0    0    0    0   1   0    0    0  0  0   0
-##         180     0      0     0    0    0    0    0    0   0   1    0    0  0  0   0
-##         200     0      0     0    0    0    0    0    0   0   0    1    0  0  0   0
-##         220     0      0     0    0    0    0    0    0   0   0    0    1  0  0   0
-##         240     0      0     0    0    0    0    0    0   0   0    0    0  1  0   0
-##         260     0      0     0    0    0    0    0    0   0   0    0    0  0  1   0
-##         280     0      0     0    0    0    0    0    0   0   0    0    0  0  0   1
-##         300     0      0     0    0    0    0    0    0   0   0    0    0  0  0   0
-##         320     0      0     0    0    0    0    0    0   0   0    0    0  0  0   0
-##         340     0      0     0    0    0    0    0    0   0   0    0    0  0  0   0
-##         360     0      0     0    0    0    0    0    0   0   0    0    0  0  0   0
-##            pressure
-## temperature 247 376 558 806
-##         0     0   0   0   0
-##         20    0   0   0   0
-##         40    0   0   0   0
-##         60    0   0   0   0
-##         80    0   0   0   0
-##         100   0   0   0   0
-##         120   0   0   0   0
-##         140   0   0   0   0
-##         160   0   0   0   0
-##         180   0   0   0   0
-##         200   0   0   0   0
-##         220   0   0   0   0
-##         240   0   0   0   0
-##         260   0   0   0   0
-##         280   0   0   0   0
-##         300   1   0   0   0
-##         320   0   1   0   0
-##         340   0   0   1   0
-##         360   0   0   0   1</code></pre>
+<pre class="r"><code>library(fpp2)
+
+data_serie &lt;- ts(Data_serie_tiempo$Serie, frequency=12, start=2004)
+autoplot(data_serie)+
+ labs(title = &quot;Serie de tiempo&quot;, 
+ x = &quot;Tiempo&quot;,
+ y = &quot;Valor&quot;,
+ colour = &quot;#00a0dc&quot;)+
+ theme_bw()</code></pre>
+<p><img src="about_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p>##Grafica de Pronostico</p>
 
 
 
