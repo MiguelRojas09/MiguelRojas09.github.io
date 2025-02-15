@@ -1,13 +1,13 @@
 ---
 title: "Pagina de prueba"
 author: Miguel Rojas
-Date: "Mayo 5, 2024"
+Date: "febrer0 15, 2025"
 ---
 
 Esta sera mi primera pagina para confirguracion de y aprendizaje de la creación
 
 ---
-table:content "rubros"
+table:content "Cars in movement"
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)

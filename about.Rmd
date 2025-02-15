@@ -3,10 +3,10 @@ title: "Info de tabla"
 ---
 
 ```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
 ```
 ```{r}
 library(fpp2)
-
 
 data_serie <- ts(Data_serie_tiempo$Serie, frequency=12, start=2004)
 autoplot(data_serie)+
