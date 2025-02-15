@@ -1,0 +1,39 @@
+---
+title: "Pronoticos"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+```{r}
+library(fpp2)
+
+
+data_serie <- ts(Data_serie_tiempo$Serie, frequency=12, start=2004)
+
+autoplot(data_serie, series="Serie tiempo") +
+ autolayer(trendcycle(fit), series="Tendencia") +
+ labs(title = "Serie de tiempo", 
+ x = "Tiempo",
+ y = "Valor"
+ ) +
+ theme_bw()
+
+m1 <- snaive(data_serie, h=24)
+autoplot(m1)
+
+autoplot(m1)+autolayer(fitted(m1), series="Ajuste")
+
+checkresiduals(m1)
+
+regresion <- tslm(data_serie ~ trend + season)
+
+m2 <- forecast(regresion, h=96)
+
+autoplot(m2)
+
+autoplot(m2)+autolayer(fitted(m2), series="Ajuste")
+
+checkresiduals(m2)
+```
+

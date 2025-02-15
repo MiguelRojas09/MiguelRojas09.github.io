@@ -258,6 +258,13 @@ $(document).ready(function () {
     sobre la pagina
   </a>
 </li>
+<li>
+  <a href="pronostico.html">
+    <span class="fa fa-gear"></span>
+     
+    Pronostico
+  </a>
+</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         
@@ -284,7 +291,7 @@ autoplot(data_serie)+
  y = &quot;Valor&quot;,
  colour = &quot;#00a0dc&quot;)+
  theme_bw()</code></pre>
-<p><img src="about_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p><img src="about_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
 <pre class="r"><code>fit &lt;- decompose(data_serie, type=&#39;additive&#39;)
 autoplot(fit)+
  labs(title = &quot;Descomposición de la serie de tiempo&quot;, 
@@ -293,10 +300,10 @@ autoplot(fit)+
  y = &quot;Valor&quot;,
  colour = &quot;Gears&quot;)+
  theme_bw()</code></pre>
-<p><img src="about_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p><img src="about_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
 <p>SE SACA UN GRAFICO DE ESTACIONALIDAD</p>
 <pre class="r"><code>ggseasonplot(data_serie)</code></pre>
-<p><img src="about_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p><img src="about_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
 
 
 

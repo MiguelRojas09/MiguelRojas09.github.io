@@ -9,10 +9,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="Miguel Rojas" />
 
 
-<title>Pagina de prueba</title>
+<title>Pronoticos</title>
 
 <script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -278,43 +277,59 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Pagina de prueba</h1>
-<h4 class="author">Miguel Rojas</h4>
+<h1 class="title toc-ignore">Pronoticos</h1>
 
 </div>
 
 
-<p>Esta sera mi primera pagina para confirguracion de y aprendizaje de
-la creación</p>
-<table>
-<tbody>
-<tr class="odd">
-<td>table:content “Cars in movement”</td>
-</tr>
-</tbody>
-</table>
-<div id="creacion-de-un-summary-cars-desde-una-base-de-datos"
-class="section level2">
-<h2>Creacion de un summary cars desde una base de datos</h2>
-<p>Creacion de tablas y graficas para esta pagina con Rmarkdown Primer
-intento con sumarry cars</p>
-<pre class="r"><code>summary(cars)</code></pre>
-<pre><code>##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00</code></pre>
-</div>
-<div id="graficas" class="section level2">
-<h2>graficas</h2>
-<p>grafica mediana plot:</p>
-<p><img src="index_files/figure-html/pressure-1.png" width="672" /></p>
-<p>Note that the <code>echo = FALSE</code> parameter was added to the
-code chunk to prevent printing of the R code that generated the
-plot.</p>
-</div>
+<pre class="r"><code>library(fpp2)
+
+
+data_serie &lt;- ts(Data_serie_tiempo$Serie, frequency=12, start=2004)
+
+autoplot(data_serie, series=&quot;Serie tiempo&quot;) +
+ autolayer(trendcycle(fit), series=&quot;Tendencia&quot;) +
+ labs(title = &quot;Serie de tiempo&quot;, 
+ x = &quot;Tiempo&quot;,
+ y = &quot;Valor&quot;
+ ) +
+ theme_bw()</code></pre>
+<pre><code>## Warning: Removed 12 rows containing missing values or values outside the scale range
+## (`geom_line()`).</code></pre>
+<p><img src="pronostico_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<pre class="r"><code>m1 &lt;- snaive(data_serie, h=24)
+autoplot(m1)</code></pre>
+<p><img src="pronostico_files/figure-html/unnamed-chunk-1-2.png" width="672" /></p>
+<pre class="r"><code>autoplot(m1)+autolayer(fitted(m1), series=&quot;Ajuste&quot;)</code></pre>
+<pre><code>## Warning: Removed 12 rows containing missing values or values outside the scale range
+## (`geom_line()`).</code></pre>
+<p><img src="pronostico_files/figure-html/unnamed-chunk-1-3.png" width="672" /></p>
+<pre class="r"><code>checkresiduals(m1)</code></pre>
+<p><img src="pronostico_files/figure-html/unnamed-chunk-1-4.png" width="672" /></p>
+<pre><code>## 
+##  Ljung-Box test
+## 
+## data:  Residuals from Seasonal naive method
+## Q* = 229.01, df = 24, p-value &lt; 2.2e-16
+## 
+## Model df: 0.   Total lags used: 24</code></pre>
+<pre class="r"><code>regresion &lt;- tslm(data_serie ~ trend + season)
+
+m2 &lt;- forecast(regresion, h=96)
+
+autoplot(m2)</code></pre>
+<p><img src="pronostico_files/figure-html/unnamed-chunk-1-5.png" width="672" /></p>
+<pre class="r"><code>autoplot(m2)+autolayer(fitted(m2), series=&quot;Ajuste&quot;)</code></pre>
+<p><img src="pronostico_files/figure-html/unnamed-chunk-1-6.png" width="672" /></p>
+<pre class="r"><code>checkresiduals(m2)</code></pre>
+<p><img src="pronostico_files/figure-html/unnamed-chunk-1-7.png" width="672" /></p>
+<pre><code>## 
+##  Ljung-Box test
+## 
+## data:  Residuals from Linear regression model
+## Q* = 939.69, df = 24, p-value &lt; 2.2e-16
+## 
+## Model df: 0.   Total lags used: 24</code></pre>
 
 
 

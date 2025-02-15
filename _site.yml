@@ -9,6 +9,9 @@ navbar:
     - text: "sobre la pagina"
       href: about.html
       icon: fa-gear
+    - text: "Pronostico"
+      href: pronostico.html
+      icon: fa-gear
 output:
   html_document:
     theme: yeti 
