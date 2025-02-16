@@ -16,7 +16,7 @@
 <script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/united.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -240,7 +240,7 @@ $(document).ready(function () {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Pagina de prueba</a>
+      <a class="navbar-brand" href="index.html">Miguel Rojas</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -263,6 +263,13 @@ $(document).ready(function () {
     <span class="fa fa-gear"></span>
      
     Pronostico
+  </a>
+</li>
+<li>
+  <a href="Municipios.html">
+    <span class="fa fa-user"></span>
+     
+    Municipios
   </a>
 </li>
       </ul>
@@ -291,7 +298,7 @@ autoplot(data_serie)+
  y = &quot;Valor&quot;,
  colour = &quot;#00a0dc&quot;)+
  theme_bw()</code></pre>
-<p><img src="about_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p><img src="about_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
 <pre class="r"><code>fit &lt;- decompose(data_serie, type=&#39;additive&#39;)
 autoplot(fit)+
  labs(title = &quot;Descomposición de la serie de tiempo&quot;, 
@@ -300,10 +307,10 @@ autoplot(fit)+
  y = &quot;Valor&quot;,
  colour = &quot;Gears&quot;)+
  theme_bw()</code></pre>
-<p><img src="about_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p><img src="about_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
 <p>SE SACA UN GRAFICO DE ESTACIONALIDAD</p>
 <pre class="r"><code>ggseasonplot(data_serie)</code></pre>
-<p><img src="about_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p><img src="about_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
 
 
 

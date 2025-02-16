@@ -1,7 +1,7 @@
 name: "Pagina de prueba"
 output_dir: "."
 navbar:
-  title: "Pagina de prueba"
+  title: "Miguel Rojas"
   left:
     - text: "inicio"
       href: index.html
@@ -12,9 +12,12 @@ navbar:
     - text: "Pronostico"
       href: pronostico.html
       icon: fa-gear
+    - text: "Municipios"
+      href: Municipios.html
+      icon: fa-user
 output:
   html_document:
-    theme: yeti 
+    theme: united 
     highlight: textmate
 
       
